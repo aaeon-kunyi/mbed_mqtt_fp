@@ -132,13 +132,13 @@
  *  @brief API for managing Function Pointers
  */
 template<class retT, class argT>
-class FP
+class FP_T
 {
 public:
-    /** Create the FP object - only one callback can be attached to the object, that is
+    /** Create the FP_T object - only one callback can be attached to the object, that is
      *  a member function or a global function, not both at the same time
      */
-    FP()
+    FP_T()
     {
         obj_callback = 0;
         c_callback = 0;
